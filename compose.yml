@@ -1,0 +1,10 @@
+services:
+  php:
+    build:
+      context: .
+    container_name: ecohead_symfony_extra_validator_bundle_php
+    entrypoint: "tail -f /dev/null"
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
